@@ -1,5 +1,4 @@
 export default function DataTable({ data }) {
-  console.log(data, ' test data table');
 
   return (
     <div className="w-full overflow-x-auto rounded-lg bg-green-500 p-4">

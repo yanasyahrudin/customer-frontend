@@ -6,14 +6,14 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 export default function GenderChart({ data }) {
   if (!data) {
-    return <p>Loading...</p>;  // Menampilkan loading jika data belum diterima
+    return <p>Loading...</p>;  
   }
 
   const chartData = {
-    labels: Object.keys(data),  // Key adalah gender (misalnya 'male', 'female')
+    labels: Object.keys(data),  
     datasets: [{
-      data: Object.values(data),  // Value adalah jumlah untuk setiap gender
-      backgroundColor: ['#3b82f6', '#f43f5e'],  // Warna chart untuk masing-masing gender
+      data: Object.values(data),
+      backgroundColor: ['#3b82f6', '#f43f5e'], 
     }]
   };
 
